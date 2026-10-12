@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cobertura Jornalística - TRANSFORMA XVI Jornada | UniCatólica</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        academicBlue: '#0f172a',
+                        academicCyan: '#06b6d4',
+                        academicTeal: '#0d9488',
+                        academicLight: '#f8fafc',
+                    },
+                    fontFamily: {
+                        sans: ['Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            line-height: 1.35;
+        }
+        /* Mobile-First Media Query fallback guaranteeing single-column layout */
+        @media (max-width: 768px) {
+            .grid-responsive {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-academicLight text-slate-800 font-sans min-h-screen flex flex-col justify-between">
+
+    <header class="bg-academicBlue text-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                <div class="bg-academicCyan text-academicBlue font-bold p-2 rounded-lg text-lg">
+                    T16
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold tracking-tight">TRANSFORMA 2026</h1>
+                    <p class="text-xs text-academicCyan">XVI Jornada de Iniciação Científica - UniCatólica</p>
+                </div>
+            </div>
+            <nav>
+                <ul class="flex flex-wrap justify-center gap-4 text-sm font-semibold">
+                    <li><a href="#home" class="hover:text-academicCyan transition-colors py-1 px-2 rounded">Início</a></li>
+                    <li><a href="#projeto1" class="hover:text-academicCyan transition-colors py-1 px-2 rounded">Usabilidade Pedagógica</a></li>
+                    <li><a href="#projeto2" class="hover:text-academicCyan transition-colors py-1 px-2 rounded">Formação Docente</a></li>
+                    <li><a href="#projeto3" class="hover:text-academicCyan transition-colors py-1 px-2 rounded">IA Generativa</a></li>
+                    <li><a href="#sobre" class="hover:text-academicCyan transition-colors py-1 px-2 rounded">Equipe & Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section id="home" class="bg-gradient-to-r from-academicBlue to-slate-900 text-white py-16 px-4 text-center">
+            <div class="max-w-4xl mx-auto">
+                <span class="bg-academicCyan/20 text-academicCyan text-xs uppercase px-3 py-1 rounded-full font-bold tracking-wider border border-academicCyan/30">Cobertura Jornalística Acadêmica</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold mt-4 mb-6 leading-tight">Inovação, Tecnologia e Pesquisa na UniCatólica</h2>
+                <p class="text-base md:text-lg text-slate-300 max-w-2xl mx-auto mb-8">
+                    Acompanhe a reportagem completa sobre a XVI Jornada de Iniciação Científica, Extensão e Inovação (TRANSFORMA), destacando os projetos que moldam o futuro da Engenharia de Software.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="#projeto1" class="bg-academicCyan text-academicBlue font-bold px-6 py-3 rounded-lg shadow-lg hover:bg-cyan-400 transition-all">Explorar Projetos</a>
+                    <a href="#sobre" class="bg-transparent border border-white text-white font-bold px-6 py-3 rounded-lg hover:bg-white/10 transition-all">Nossa Equipe (Trio)</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-4 py-12">
+            <div class="text-center mb-12">
+                <h3 class="text-2xl md:text-3xl font-bold text-academicBlue">Matérias em Destaque</h3>
+                <p class="text-slate-600 mt-2">Clique em qualquer matéria abaixo para ler a análise completa detalhada.</p>
+            </div>
+
+            <div class="grid grid-responsive grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <article class="bg-white rounded-xl shadow-md overflow-hidden border border-slate-200 flex flex-col justify-between hover:shadow-xl transition-shadow">
+                    <div>
+                        <figure class="relative h-48 bg-slate-200 overflow-hidden">
+                            <img src="https://placehold.co/600x400/0f172a/06b6d4?text=Usabilidade+Pedagogica" alt="Apresentação do projeto de Usabilidade e Engajamento Pedagógico" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/600x400/cccccc/333333?text=Projeto+1'">
+                            <figcaption class="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded">Apresentação TRANSFORMA</figcaption>
+                        </figure>
+                        <div class="p-6">
+                            <span class="text-xs font-semibold text-academicTeal uppercase tracking-wider">Engenharia de Software</span>
+                            <h4 class="text-lg font-bold text-academicBlue mt-1 mb-3">Avaliação da Usabilidade e Engajamento em Modelos Pedagógicos</h4>
+                            <p class="text-sm text-slate-600 line-clamp-3">Estudo aprofundado sobre experiência do usuário em ambientes interativos aplicados ao ensino superior.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#projeto1" class="block text-center w-full bg-academicBlue text-white py-2 rounded-lg font-semibold hover:bg-slate-800 transition-colors">Ler Matéria Completa</a>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="bg-white rounded-xl shadow-md overflow-hidden border border-slate-200 flex flex-col justify-between hover:shadow-xl transition-shadow">
+                    <div>
+                        <figure class="relative h-48 bg-slate-200 overflow-hidden">
+                            <img src="https://placehold.co/600x400/0d9488/ffffff?text=Formacao+Docente" alt="Tela de demonstração da plataforma de formação docente" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/600x400/cccccc/333333?text=Projeto+2'">
+                            <figcaption class="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded">Plataforma Web</figcaption>
+                        </figure>
+                        <div class="p-6">
+                            <span class="text-xs font-semibold text-academicTeal uppercase tracking-wider">Engenharia de Software</span>
+                            <h4 class="text-lg font-bold text-academicBlue mt-1 mb-3">Otimização da Formação Docente no Ensino Superior</h4>
+                            <p class="text-sm text-slate-600 line-clamp-3">Ferramentas interativas desenvolvidas para capacitar professores universitários com agilidade.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#projeto2" class="block text-center w-full bg-academicBlue text-white py-2 rounded-lg font-semibold hover:bg-slate-800 transition-colors">Ler Matéria Completa</a>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="bg-white rounded-xl shadow-md overflow-hidden border border-slate-200 flex flex-col justify-between hover:shadow-xl transition-shadow">
+                    <div>
+                        <figure class="relative h-48 bg-slate-200 overflow-hidden">
+                            <img src="https://placehold.co/600x400/06b6d4/0f172a?text=IA+Generativa" alt="Equipe de pesquisa apresentando os impactos da IA em software" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/600x400/cccccc/333333?text=Projeto+3'">
+                            <figcaption class="absolute bottom-2 left-2 bg-black/70 text-white text-xs px-2 py-1 rounded">Equipe de Pesquisa</figcaption>
+                        </figure>
+                        <div class="p-6">
+                            <span class="text-xs font-semibold text-academicTeal uppercase tracking-wider">Inovação em Desenvolvimento</span>
+                            <h4 class="text-lg font-bold text-academicBlue mt-1 mb-3">Produtividade e Impactos Econômicos da IA Generativa</h4>
+                            <p class="text-sm text-slate-600 line-clamp-3">Análise rigorosa sobre como modelos de IA transformam métricas de produtividade e custos.</p>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#projeto3" class="block text-center w-full bg-academicBlue text-white py-2 rounded-lg font-semibold hover:bg-slate-800 transition-colors">Ler Matéria Completa</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="projeto1" class="bg-white py-16 border-t border-slate-200">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="mb-6">
+                    <span class="bg-academicCyan/10 text-academicTeal text-xs font-bold uppercase px-3 py-1 rounded-full">Reportagem Especial 01</span>
+                    <h2 class="text-2xl md:text-4xl font-extrabold text-academicBlue mt-3 mb-4">Avaliação da Usabilidade e Engajamento em Modelos Pedagógicos Inovadores em Ambientes Interativos de Aprendizagem</h2>
+                    <p class="text-sm text-slate-500 font-medium">Bolsista: <strong>Fernanda Galvão Marçal</strong> | Orientadora: <strong>Prof.ª Dra. Valdirene Cássia da Silva</strong> | Área: <strong>Engenharia de Software</strong></p>
+                </div>
+
+                <figure class="mb-8 rounded-xl overflow-hidden shadow-lg border border-slate-200">
+                    <figure class="mb-8 rounded-xl overflow-hidden shadow-lg border border-slate-200">
+    <img src="pesquisa Fernanda.jpeg" alt="Bolsista Fernanda Galvão Marçal apresentando seu projeto avaliativo no TRANSFORMA" class="w-full h-auto object-cover">
+    <figcaption class="p-3 bg-slate-100 text-xs text-slate-600 text-center">A Capa do Slide.</figcaption>
+</figure>
+
+                <div class="space-y-6 text-slate-700 leading-relaxed">
+                    <article>
+                        <h3 class="text-xl font-bold text-academicBlue mb-2 border-l-4 border-academicCyan pl-3">Objetivo do Projeto</h3>
+                        <p>O objetivo central desta pesquisa foi analisar e mensurar o nível de usabilidade, interatividade e engajamento proporcionado por modelos pedagógicos inovadores aplicados em ambientes virtuais de aprendizagem, mapeando pontos fortes e gargalos ergonômicos na experiência dos acadêmicos.</p>
+                    </article>
+
+                    <article>
+                        <h3 class="text-xl font-bold text-academicBlue mb-2 border-l-4 border-academicCyan pl-3">Problema Investigado</h3>
+                        <p>Muitas plataformas educacionais digitais integram recursos tecnológicos avançados, mas negligenciam princípios fundamentais de experiência do usuário (UX) e usabilidade. Isso gera sobrecarga cognitiva, desinteresse discente e altas taxas de evasão em cursos mediados por tecnologia.</p>
+                    </article>
+
+                    <div class="grid grid-responsive grid-cols-1 md:grid-cols-2 gap-6 my-6">
+                        <div class="bg-academicLight p-6 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-academicBlue mb-2">Área de Atuação e Público-Alvo</h4>
+                            <p class="text-sm text-slate-600"><strong>Área:</strong> Engenharia de Software e Tecnologias Educacionais.<br><strong>Público-alvo:</strong> Estudantes universitários, professores do ensino superior e designers instrucionais.</p>
+                        </div>
+                        <div class="bg-academicLight p-6 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-academicBlue mb-2">Partes Interessadas (Stakeholders)</h4>
+                            <p class="text-sm text-slate-600">Instituições de ensino superior, coordenadores pedagógicos, desenvolvedores de softwares educacionais e os próprios estudantes beneficiados.</p>
+                        </div>
+                    </div>
+
+                    <article>
+                        <h3 class="text-xl font-bold text-academicBlue mb-2 border-l-4 border-academicCyan pl-3">Concorrentes e Benchmarking de Mercado</h3>
+                        <p class="mb-3">A pesquisa avaliou soluções já consagradas no ecossistema tecnológico:</p>
+                        <ul class="list-disc pl-6 space-y-2 text-sm">
+                            <li><a href="https://moodle.org" target="_blank" rel="noopener noreferrer" class="text-academicTeal underline font-semibold hover:text-academicBlue">Moodle</a>: O ambiente virtual de aprendizagem globalmente mais utilizado, focado em flexibilidade institucional, embora frequentemente criticado por interfaces complexas.</li>
+                            <li><a href="https://www.khanacademy.org" target="_blank" rel="noopener noreferrer" class="text-academicTeal underline font-semibold hover:text-academicBlue">Khan Academy</a>: Plataforma educacional com foco em engajamento interativo, gamificação e trilhas de aprendizado altamente intuitivas para o usuário final.</li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <h3 class="text-xl font-bold text-academicBlue mb-2 border-l-4 border-academicCyan pl-3">Diferencial e Inovação</h3>
+                        <p>O grande diferencial do estudo reside na aplicação de métricas rigorosas de Engenharia de Software direcionadas especificamente à usabilidade pedagógica humanizada, combinando testes empíricos com feedback contínuo de alunos da UniCatólica.</p>
+                    </article>
+
+                    <div class="bg-cyan-50 border-l-4 border-academicCyan p-6 rounded-r-xl">
+                        <h3 class="text-lg font-bold text-academicBlue mb-2">Análise Crítica da Cobertura</h3>
+                        <p class="text-sm text-slate-700">O trabalho de Fernanda Marçal sob orientação da Prof.ª Dra. Valdirene Cássia traz uma contribuição indispensável para a modernização do ensino digital na instituição. O rigor metodológico assegura que as conclusões sirvam de base sólida para futuras melhorias nas ferramentas institucionais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projeto2" class="bg-slate-100 py-16 border-t border-slate-200">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="mb-6">
+                    <span class="bg-academicTeal/10 text-academicTeal text-xs font-bold uppercase px-3 py-1 rounded-full">Reportagem Especial 02</span>
+                    <h2 class="text-2xl md:text-4xl font-extrabold text-academicBlue mt-3 mb-4">Otimização da Formação Docente no Ensino Superior por Meio de Ferramentas de Aprendizagem Interativa</h2>
+                    <p class="text-sm text-slate-500 font-medium">Bolsista: <strong>Victor Hugo Brito Coelho</strong> | Orientadora: <strong>Drª Valdirene Cássia da Silva</strong> | Área: <strong>Engenharia de Software</strong></p>
+                </div>
+
+                <figure class="mb-8 rounded-xl overflow-hidden shadow-lg border border-slate-200 bg-white">
+    <img src="pesquisa Victor.jpeg" alt="Demonstração do sistema web desenvolvido para suporte e formação docente" class="w-full h-auto object-cover">
+    <figcaption class="p-3 bg-slate-50 text-xs text-slate-600 text-center"><figure class="mb-8 rounded-xl overflow-hidden shadow-lg border border-slate-200 bg-white">
+    <img src="pesquisa Victor.jpg" alt="Demonstração do sistema web desenvolvido para suporte e formação docente" class="w-full h-auto object-cover">
+    <figcaption class="p-3 bg-slate-50 text-xs text-slate-600 text-center">Capa Slide - Otimização da Formação Docente no Ensino Superior por Meio de Ferramentas de Aprendizagem Interativa.</figcaption>
+</figure>.</figcaption>
+</figure>
+
+                <div class="space-y-6 text-slate-700 leading-relaxed">
+                    <article>
+                        <h3 class="text-xl font-bold text-academicBlue mb-2 border-l-4 border-academicTeal pl-3">Objetivo do Projeto</h3>
+                        <p>O projeto desenvolveu e avaliou ferramentas digitais interativas focadas na otimização da formação continuada de professores universitários, facilitando o acesso a metodologias ativas e práticas pedagógicas digitais modernas.</p>
+                    </article>
+
+                    <article>
+                        <h3 class="text-xl font-bold text-academicBlue mb-2 border-l-4 border-academicTeal pl-3">Problema Investigado</h3>
+                        <p>Muitos docentes do ensino superior possuem excelência técnica em suas respectivas áreas de formação, mas encontram barreiras na adaptação a metodologias ativas e ferramentas digitais inovadoras devido à escassez de suporte prático e centralizado.</p>
+                    </article>
+
+                    <div class="grid grid-responsive grid-cols-1 md:grid-cols-2 gap-6 my-6">
+                        <div class="bg-white p-6 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-academicBlue mb-2">Área de Atuação e Público-Alvo</h4>
+                            <p class="text-sm text-slate-600"><strong>Área:</strong> Engenharia de Software e Educação Superior.<br><strong>Público-alvo:</strong> Professores universitários, núcleos de apoio pedagógico e gestores acadêmicos.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-academicBlue mb-2">Links dos Sistemas Desenvolvidos</h4>
+                            <p class="text-sm text-slate-600 mb-2">Acesse os ambientes funcionais da pesquisa:</p>
+                            <div class="flex flex-col gap-1">
+                                <a href="https://app-formacao-continua.vercel.app" target="_blank" rel="noopener noreferrer" class="text-academicTeal underline font-semibold text-xs hover:text-academicBlue">🔗 app-formacao-continua.vercel.app</a>
+                                <a href="https://backoffice-formacao-continua.vercel.app" target="_blank" rel="noopener noreferrer" class="text-academicTeal underline font-semibold text-xs hover:text-academicBlue">🔗 backoffice-formacao-continua.vercel.app</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <article>
+                        <h3 class="text-xl font-bold text-academicBlue mb-2 border-l-4 border-academicTeal pl-3">Concorrentes e Ferramentas de Mercado</h3>
+                        <p class="mb-3">Foram analisadas soluções corporativas e educacionais voltadas para capacitação:</p>
+                        <ul class="list-disc pl-6 space-y-2 text-sm">
+                            <li><a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer" class="text-academicTeal underline font-semibold hover:text-academicBlue">Coursera for Campus</a>: Solução global de cursos para universidades, embora genérica e sem personalização para a realidade regional brasileira.</li>
+                            <li><a href="https://www.udemy.com" target="_blank" rel="noopener noreferrer" class="text-academicTeal underline font-semibold hover:text-academicBlue">Udemy Business</a>: Repositório massivo de cursos livres, carecendo de acompanhamento pedagógico institucional direcionado e métricas para gestores.</li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <h3 class="text-xl font-bold text-academicBlue mb-2 border-l-4 border-academicTeal pl-3">Diferencial e Inovação</h3>
+                        <p>O ecossistema dual criado por Victor Hugo (aplicativo front-end para professores e painel backoffice para gestão) oferece uma solução completa, ágil e customizada para as demandas reais de capacitação docente em instituições como a UniCatólica.</p>
+                    </article>
+
+                    <div class="bg-teal-50 border-l-4 border-academicTeal p-6 rounded-r-xl">
+                        <h3 class="text-lg font-bold text-academicBlue mb-2">Análise Crítica da Cobertura</h3>
+                        <p class="text-sm text-slate-700">A iniciativa do bolsista Victor Hugo Coelho sob orientação da Drª Valdirene Cássia demonstra maturidade técnica exemplar ao entregar softwares totalmente funcionais implantados na nuvem (Vercel). É uma vitrine da excelência em Engenharia de Software da instituição.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projeto3" class="bg-white py-16 border-t border-slate-200">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="mb-6">
+                    <span class="bg-academicCyan/10 text-academicCyan text-xs font-bold uppercase px-3 py-1 rounded-full">Reportagem Especial 03</span>
+                    <h2 class="text-2xl md:text-4xl font-extrabold text-academicBlue mt-3 mb-4">Produtividade e Impactos Econômicos da Inteligência Artificial Generativa no Desenvolvimento de Software</h2>
+                    <p class="text-sm text-slate-500 font-medium">Autores: <strong>Clara Castro Santos, Larissa Rocha Cavalcante de Castro, Matheus Carvalho Pina, Ana Carolina Guedes Santos, Luísa Castro Santos, Kariny Ferreira de Melo Picolotto</strong> | Orientadora: <strong>Ila Raquel Mello Cardoso</strong></p>
+                </div>
+
+                <figure class="mb-8 rounded-xl overflow-hidden shadow-lg border border-slate-200">
+    <img src="pesquisa Matheus.jpeg" alt="Equipe de pesquisadores responsáveis pelo estudo de IA Generativa no TRANSFORMA" class="w-full h-auto object-cover">
+    <figcaption class="p-3 bg-slate-100 text-xs text-slate-600 text-center">O cartaz da apresentação dos dados econômicos do uso de IA no desenvolvimento de software.</figcaption>
+</figure>
+
+                <div class="space-y-6 text-slate-700 leading-relaxed">
+                    <article>
+                        <h3 class="text-xl font-bold text-academicBlue mb-2 border-l-4 border-academicCyan pl-3">Objetivo do Projeto</h3>
+                        <p>O estudo teve como objetivo principal quantificar os impactos de ferramentas de inteligência artificial generativa na produtividade de equipes de desenvolvimento de software, avaliando métricas de tempo de entrega, redução de defeitos e viabilidade econômica.</p>
+                    </article>
+
+                    <article>
+                        <h3 class="text-xl font-bold text-academicBlue mb-2 border-l-4 border-academicCyan pl-3">Problema Investigado</h3>
+                        <p>A rápida proliferação de assistentes baseados em IA generativa gerou debates intensos na indústria, mas ainda há lacunas científicas sobre a mensuração real de seus ganhos de produtividade, curva de aprendizado e impactos econômicos a médio e longo prazo.</p>
+                    </article>
+
+                    <div class="grid grid-responsive grid-cols-1 md:grid-cols-2 gap-6 my-6">
+                        <div class="bg-academicLight p-6 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-academicBlue mb-2">Área de Atuação e Público-Alvo</h4>
+                            <p class="text-sm text-slate-600"><strong>Área:</strong> Engenharia de Software e Inteligência Artificial.<br><strong>Público-alvo:</strong> Desenvolvedores de software, gestores de projetos tecnológicos e empresas de tecnologia.</p>
+                        </div>
+                        <div class="bg-academicLight p-6 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-academicBlue mb-2">Partes Interessadas (Stakeholders)</h4>
+                            <p class="text-sm text-slate-600">Empresas desenvolvedoras, profissionais de TI, pesquisadores de inteligência artificial e instituições de ensino superior tecnológico.</p>
+                        </div>
+                    </div>
+
+                    <article>
+                        <h3 class="text-xl font-bold text-academicBlue mb-2 border-l-4 border-academicCyan pl-3">Concorrentes e Tecnologias de Mercado</h3>
+                        <p class="mb-3">A pesquisa avaliou tecnologias de ponta adotadas no ecossistema atual:</p>
+                        <ul class="list-disc pl-6 space-y-2 text-sm">
+                            <li><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer" class="text-academicTeal underline font-semibold hover:text-academicBlue">GitHub Copilot</a>: Assistente de código baseado em inteligência artificial líder de mercado, utilizado para autocompletar linhas e gerar blocos inteiros de código.</li>
+                            <li><a href="https://openai.com/chatgpt" target="_blank" rel="noopener noreferrer" class="text-academicTeal underline font-semibold hover:text-academicBlue">ChatGPT (OpenAI)</a>: Modelo de linguagem generativa aplicado para arquitetura de software, depuração de erros e suporte a tomadas de decisão técnicas.</li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <h3 class="text-xl font-bold text-academicBlue mb-2 border-l-4 border-academicCyan pl-3">Diferencial e Inovação</h3>
+                        <p>O diferencial do trabalho coletivo conduzido pelo grupo reside na abordagem empírica e econômica, cruzando dados estatísticos de desempenho real com análises financeiras de custo-benefício na adoção dessas tecnologias.</p>
+                    </article>
+
+                    <div class="bg-cyan-50 border-l-4 border-academicCyan p-6 rounded-r-xl">
+                        <h3 class="text-lg font-bold text-academicBlue mb-2">Análise Crítica da Cobertura</h3>
+                        <p class="text-sm text-slate-700">Sob a orientação da Prof.ª Ila Raquel Mello Cardoso, o grupo apresentou uma pesquisa extremamente atual e alinhada com as transformações globais do mercado de TI. A profundidade dos dados econômicos demonstra o alto nível de maturidade científica dos discentes da UniCatólica.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="bg-slate-900 text-white py-16">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <span class="bg-academicCyan/20 text-academicCyan text-xs uppercase px-3 py-1 rounded-full font-bold tracking-wider border border-academicCyan/30">Bastidores da Cobertura</span>
+                <h3 class="text-2xl md:text-3xl font-bold mt-4 mb-4"> </h3>
+                <p class="text-slate-300 text-sm md:text-base max-w-2xl mx-auto mb-8">
+                    Portal desenvolvido com rigor metodológico e padrão jornalístico para a cobertura da XVI Jornada de Iniciação Científica, Extensão e Inovação da UniCatólica do Tocantins.
+                </p>
+
+                
+
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700 inline-block text-left max-w-md w-full">
+                    <p class="text-sm font-semibold text-academicCyan mb-2">Ficha Técnica:</p>
+                    <ul class="text-sm text-slate-300 space-y-1">
+                        <li><strong>Integrantes do Grupo:</strong> Fernando Alves e Thiago José</li>
+                        <li><strong>Disciplina:</strong> Engenharia de Software - Soluções para internet</li>
+                        <li><strong>Instituição:</strong> UniCatólica do Tocantins</li>
+                        <li><strong>Evento Coberto:</strong> TRANSFORMA 2026</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-academicBlue text-slate-400 py-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4">
+            <div>
+                <p class="text-sm font-bold text-white">TRANSFORMA | UniCatólica do Tocantins</p>
+                <p class="text-xs text-slate-400 mt-1">Cobertura Jornalística Oficial da XVI Jornada de Iniciação Científica.</p>
+            </div>
+            <div class="text-xs text-slate-400">
+                <p>&copy; 2026 Fernando Alves e Thiago José. Todos os direitos reservados.</p>
+                <p class="mt-1">Disciplina: Engenharia de Software - Soluções para internet.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scroll adjustment for anchor links to prevent sticky header overlap
+            const links = document.querySelectorAll('nav a, a[href^="#"]');
+            
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    if(targetId.startsWith('#') && targetId.length > 1) {
+                        e.preventDefault();
+                        const targetElement = document.querySelector(targetId);
+                        if(targetElement) {
+                            const headerOffset = 80;
+                            const elementPosition = targetElement.getBoundingClientRect().top;
+                            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                            window.scrollTo({
+                                top: offsetPosition,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+
+            console.log("Portal jornalístico.");
+        });
+    </script>
+</body>
+</html>
